@@ -1,0 +1,20 @@
+- [x] Name
+- [x] Port
+- [x] Nodemon
+- [x] BodyParser (Express version)
+- [x] Limit CORS to specific domain
+- [x] dotenv
+- [x] Add:
+  - [x] Helmet (description)
+  - [x] Morgan (description)
+  - [x] Monk (description)
+    - [x] DB_USERNAME
+    - [x] DB_PASSWORD
+    - [x] DB_URL
+    - [x] DB_COLLECTION (array)
+- [ ] Routes
+
+- [ ] Inside (app.get())
+- [ ] Outside (app.use())
+- [ ] Session
+- [ ] Passport
