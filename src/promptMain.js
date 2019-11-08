@@ -28,6 +28,7 @@ module.exports = async function() {
       type: 'text',
       name: 'description',
       message: 'Project Description ? 💌 \n',
+      default: 'Server',
       validate: name => {
         return !name ? 'Pleaser enter a value' : true;
       },
@@ -43,7 +44,7 @@ module.exports = async function() {
       type: 'text',
       name: 'port',
       message: 'Port number to run locally ? 🚪 ' + ' (maximum 65535) ',
-      default: 3000,
+      default: '3000',
       filter: t => {
         t = t.replace(/\D+/g, '');
         return +t > 65535 ? 65535 : +t;
@@ -153,7 +154,7 @@ module.exports = async function() {
       type: 'checkbox',
       name: 'routes',
       message: 'Do you want basic Routes already setup ? 🚧 ',
-      choices: ['Hello World', 'Find All', 'Find One by ID', 'Delete by ID'],
+      choices: ['Find All', 'Find One by ID', 'Delete by ID'],
     },
   ]);
   return answers;

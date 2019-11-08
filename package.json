@@ -1,18 +1,29 @@
 {
   "name": "express-creator",
   "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "Generates an Express App easily with some options (MongoDB, Morgan, Helmet, etc.)",
+  "main": "src/app.js",
+  "bin": {
+    "ec": "src/app.js",
+    "express-creator": "src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nesci28/Express_Creator.git"
   },
   "keywords": [
     "express",
     "generator",
-    "creator"
+    "helmet",
+    "mongodb",
+    "morgan"
   ],
-  "author": "",
-  "license": "ISC",
+  "author": "Marc Gagnon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Nesci28/Express_Creator/issues"
+  },
+  "homepage": "https://github.com/Nesci28/Express_Creator#readme",
   "dependencies": {
     "inquirer": "^7.0.0",
     "inquirer-select-directory": "^1.2.0"
