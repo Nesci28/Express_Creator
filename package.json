@@ -1,6 +1,6 @@
 {
   "name": "express-creator",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Generates an Express App easily with some options (MongoDB, Morgan, Helmet, etc.)",
   "main": "src/app.js",
   "bin": {

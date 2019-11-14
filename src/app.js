@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 const cp = require('child_process');
 const fs = require('fs');
 const path = require('path');
@@ -5,7 +7,7 @@ const path = require('path');
 const mainPrompt = require('./promptMain');
 const helpers = require('./helpers');
 
-(async () => {
+async function main() {
   const toNull = process.platform === 'win32' ? 'nul 2>&1' : '/dev/null 2>&1';
 
   const answers = await mainPrompt();
@@ -136,4 +138,6 @@ const helpers = require('./helpers');
   }
   fs.writeFileSync('routes/db.js', data);
   helpers.printDone('Generating the Routes...');
-})();
+}
+
+main();
